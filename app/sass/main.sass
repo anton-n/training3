@@ -1,0 +1,352 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	// overflow-x: hidden
+	opacity: 1
+	color: #000
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+
+.main-header
+	min-height: 1080px
+	background-image: url(../img/header-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+
+.logo
+	padding-top: 54px
+	&__text
+		color: #000
+		font-weight: 300
+		font-size: 36px
+		line-height: 36px
+		text-decoration: none
+		&:active
+			color: #000
+			text-decoration: none
+			border-bottom: none
+			outline: none
+		&--bold
+			font-weight: 700
+
+.header-navigation
+	list-style-type: none
+	margin: 0
+	padding: 0
+	font-size: 0
+	padding-top: 70px
+	text-align: right
+	&__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 10px
+		&__link
+			font-size: 18px
+			color: #000
+			font-size: 18px
+			font-weight: 400
+			line-height: 24px
+			padding: 8px
+			border: 1px solid transparent
+			border-radius: 19px
+			text-decoration: none
+			transition: border-color .5s ease 0s
+			&:hover
+				color: #000
+				text-decoration: none
+				border-color: rgba(0, 0, 0, 0.3)
+
+.header-caption
+	text-align: center
+	margin-top: 210px
+	&__title
+		margin: 0
+			bottom: 10px
+		color: #000
+		font-size: 48px
+		font-weight: 700
+		line-height: 48px
+	&__description
+		color: #949494
+		font-size: 18px
+		font-weight: 400
+		line-height: 30px
+		margin-bottom: 60px
+
+.btn
+	display: inline-block
+	vertical-align: top
+	padding: 0 50px
+	height: 50px
+	line-height: 50px
+	background: linear-gradient(74deg, #49007c 0%, #e70088 100%)
+	border-radius: 25px
+	color: #fff
+	font-size: 18px
+	font-weight: 400
+	text-decoration: none
+	transition: opacity .5s linear 0s
+	opacity: 1
+	&:hover
+		opacity: .75
+	&-wrap
+		text-align: center
+
+.scrool-down
+	text-align: center
+	margin-top: 400px
+	&-target
+		text-decoration: none
+		text-transform: lowercase
+		color: white;
+		font-size: 14px
+		font-weight: 300
+		line-height: 18px
+		padding-top: 54px
+		background-image: url(../img/scrool-down.png)
+		background-repeat: no-repeat
+		background-position: top center
+
+.best
+	background-image: url(../img/best.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: left
+	min-height: 520px
+	&__title
+		color: #fff
+		font-size: 48px
+		line-height: 36px
+		font-weight: 300
+		margin: 0
+			top: 144px
+		&--bold
+			font-weight: 700
+	&__info
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		margin: 25px 0 35px
+
+// .design-text,
+// .code-text
+// 	max-width: 570px
+
+.skills
+	padding: 100px 0
+	&__header
+		text-align: center
+		color: #000
+		font-size: 48px
+		font-weight: 700
+		line-height: 48px
+		margin: 0
+			bottom: 92px
+	&__item
+		padding-left: 158px
+		// background-image: url(../img/web-applications.png)
+		background-repeat: no-repeat
+		background-position: left center
+		margin-bottom: 76px
+		&__title
+			color: #000
+			font-size: 30px
+			font-weight: 700
+			line-height: 36px
+			margin: 0
+		&__description
+			color: #949494
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+	&__design
+		background-image: url(../img/web-design.png)
+	&__applications
+		background-image: url(../img/web-applications.png)
+	&__paiting
+		background-image: url(../img/digital-paiting.png)
+	&__desktop-applications
+		background-image: url(../img/desktop-applications.png)
+
+.carousel
+	position: relative
+	&__item
+		min-height: 480px
+		opacity: 1
+		&:hover
+			opacity: .9
+		&__hidden
+			margin: 0 auto
+			padding-top: 130px
+			text-align: center
+			max-width: 390px
+			display: none
+			&__title
+				text-align: center
+				color: #fff
+				font-size: 30px
+				font-weight: 700
+				line-height: 36px
+				margin: 0
+				padding-bottom: 20px
+			&__description
+				text-align: center
+				margin: 0
+				padding-bottom: 60px
+				color: #fff
+				font-size: 16px
+				font-weight: 300
+				line-height: 24px
+
+.carousel__item:hover .carousel__item__hidden
+	display: block
+
+.slide-1
+	background-image: url(../img/slide-1.jpg)
+.slide-2
+	background-image: url(../img/slide-2.jpg)
+.slide-3
+	background-image: url(../img/slide-3.jpg)
+
+.owl-prev,
+.owl-next
+	width: 58px
+	height: 58px
+	// margin-top: -20px
+	position: absolute
+	content: ""
+	top: 50%
+	background: #fff url(../img/arrow.png)
+	background-repeat: no-repeat
+	background-position: 40% center
+
+.owl-prev
+	left: 0
+
+.owl-next
+	right: 0
+	transform: rotate(180deg)
+
+.about
+	min-height: 900px
+	background-image: url(../img/about-us.jpg)
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	padding: 110px 0
+	&__title
+		color: #fff
+		font-size: 48px
+		font-weight: 700
+		line-height: 36px
+		margin: 0
+			bottom: 44px
+		text-align: center
+		&__description
+			color: #949494
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+			text-align: center
+			max-width: 700px
+			margin: 0 auto
+				bottom: 130px
+	&__item
+		margin-bottom: 100px
+		&__img
+			margin: 0 auto
+		&__name
+			color: #fff
+			font-size: 24px
+			font-weight: 700
+			line-height: 36px
+			text-align: center
+			margin: 22px 0
+		&__text
+			color: #949494
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+			text-align: center
+			margin: 0
+
+#map
+	height: 600px
+
+.main-footer
+	padding: 50px 0
+	text-align: center
+	&-text
+		color: #a7acbc
+		font-size: 18px
+		line-height: 36px
+		font-weight: 300
+	&-link
+		color: #a7acbc
+		font-size: 18px
+		line-height: 36px
+		font-weight: 700
+		text-decoration: none
+		&:hover
+			color: #999
+
+#header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9999
+	// width: 100%
+	// padding: 20px 0
+
+#header.default
+	position: fixed
+	top: 0
+	background: #fff
+	padding: 30px 0
+	box-shadow: inset 0 -1px 0 #DFDFDF
+	.logo
+		padding-top: 0
+	.header-navigation
+		padding-top: 14px
+
+@import "media" // Всегда в конце
